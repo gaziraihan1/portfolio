@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark" id="htmlTag">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Tailwind practice</title>
 </head>
-<body>
+<body class="dark:bg-gray-800 dark:text-white">
     <div class="">
         <div class="bg-blue-400 relative flex justify-between h-12 sm:h-14">
             <div>
-
+                <button id="darkLight" class="p-3">&#9889</button>
             </div>
             <div>
                 <nav class="flex row-reverse justify-end h-12 sm:h-14 sm:w-full sm:items-center">
-                    <button id="menuBtn" class="absolute block mt-1 h-10 text-4xl mx-4 text-black text-center sm:hidden">&equiv;</button>
+                    <button id="menuBtn" class="absolute block px-3 text-4xl text-black text-center sm:hidden">&equiv;</button>
                     <ul id="mainMenu" class="hidden absolute w-full left-0 top-12 p-4 text-center bg-blue-300  sm:relative sm:top-0 sm:flex sm:p-2 sm:flex-row-reverse sm:bg-blue-400 sm:mb-0 sm:justify-center sm:text-center sm:mr-2">
                         <li class="mb-2 sm:mb-0  cursor-pointer sm:mx-5">
                             <a class="text-white font-mono text-base hover:text-teal-800 font-semibold sm:text-xl href="">Home</a>
@@ -34,9 +34,19 @@
                     </ul>
                 </nav>
             </div>
-            
+
         </div>
     </div>
+    <div>
+        <h1>
+        </h1>
+    </div>
     <script src="script.js"></script>
+    <script>
+        const htmlTagSelect = document.getElementById('htmlTag');
+        document.getElementById('darkLight').addEventListener("click", function(){
+            htmlTagSelect.classList.toggle('dark');
+        });
+    </script>
 </body>
 </html>
