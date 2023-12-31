@@ -2,7 +2,11 @@
 module.exports = {
   content: ["*"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'rubik': ['Rubik+Doodle+Shadow'],
+      },
+    },
   },
   plugins: [],
   darkmode: 'class',
