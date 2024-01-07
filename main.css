@@ -8,5 +8,24 @@
         color:green;
         font-family: monospace;
         font-weight:600;
+    };
+}
+@layer components{
+    .social{
+        @apply text-green-800 font-serif;
+    }
+    .serviceDesign{
+        @apply mx-4 my-4 bg-gray-300 rounded p-2 shadow-gray-300 shadow-lg
+         hover:bg-gray-800 transition-colors
+         hover:border-2 hover:border-red-500;
+    }
+    .serviceH1{
+        @apply text-center pt-3 pb-1 text-xl text-violet-600 font-bold font-serif hover:text-gray-200;
+    }
+    .serviceP{
+        @apply text-center text-yellow-600 hover:text-green-600;    
+    }
+    .serviceInfo{
+        @apply text-center text-lg font-bold text-green-600;
     }
 }
